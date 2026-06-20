@@ -1,0 +1,37 @@
+<!doctype html><!-- factory-demo-4page:cannon-elec-ltd-llcd --><html><head><title>Cannon Elec Ltd</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1e293b;background:radial-gradient(120% 120% at 50% -10%,#f8fafc 0%,#f1f5f9 100%);line-height:1.6;padding-bottom:94px;overflow-x:hidden}
+a{text-decoration:none;color:inherit;transition:all 0.2s ease}
+img{display:block;max-width:100%}
+.wrap{width:min(1160px,90%);margin:auto}
+@keyframes fadeUp { from { opacity:0; transform:translateY(24px) } to { opacity:1; transform:translateY(0) } }
+.animate { animation: fadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity:0; }
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.30s; }
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.85);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,0.3);box-shadow:0 10px 40px -10px rgba(15,23,42,0.05)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:900;font-size:1.15rem;letter-spacing:-0.02em;color:#0f172a;max-width:44vw}
+.links{display:flex;gap:32px;color:#475569;font-size:.95rem;font-weight:600}
+.links a:hover{color:#0f172a}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:12px;background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;font-weight:700;box-shadow:0 12px 30px -8px rgba(15,23,42,0.3);transition:all .25s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px -10px rgba(15,23,42,0.4)}
+.hero{padding:40px 0 20px}
+.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;min-height:620px;background:linear-gradient(145deg,#0f172a 0%,#020617 100%);color:#fff;border-radius:32px;overflow:hidden;box-shadow:0 30px 60px -15px rgba(2,6,23,0.5);position:relative}
+.heroCopy{padding:64px;display:flex;flex-direction:column;justify-content:center;gap:28px}
+.hero h1{font-size:clamp(3rem,6vw,5.5rem);line-height:1.05;letter-spacing:-0.03em;margin:0}
+.hero p{font-size:1.15rem;color:#94a3b8;max-width:540px}
+.heroMedia{position:relative;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80') center/cover}
+.section{padding:80px 0}
+.section h2{font-size:clamp(2.5rem,4vw,3.5rem);line-height:1.1;letter-spacing:-0.02em;margin:0 0 16px;color:#0f172a}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:24px;padding:32px;box-shadow:0 10px 30px -10px rgba(15,23,42,0.05);transition:all .3s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 40px -15px rgba(15,23,42,0.1)}
+.pageHero{background:linear-gradient(145deg,#0f172a,#020617);color:#fff;padding:80px 0;border-radius:0 0 40px 40px;margin-bottom:60px;box-shadow:0 20px 40px -10px rgba(15,23,42,0.15)}
+footer{border-top:1px solid #e2e8f0;padding:48px 0;color:#64748b;background:#fff;text-align:center;font-weight:500}
+@media(max-width:900px){
+  .heroGrid{grid-template-columns:1fr;min-height:auto}
+  .heroCopy{padding:32px}
+  .heroMedia{min-height:300px;order:-1}
+  .links{display:none}
+}
+</style></head><body><header class="top"><div class="wrap nav"><div class="brand">Cannon Elec Ltd</div><nav class="links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="contact.html">Contact</a><a href="extra.html">More Info</a></nav><a class="btn" href="#">Get in touch</a></div></header><main class="animate"><section class="wrap hero"><div class="heroGrid"><div class="heroCopy"><h1>Premium Electrician</h1><p>A sophisticated digital presence engineered for Bootle's most demanding clients.</p><div class="actions"><a class="btn" href="contact.html">Start Project</a></div></div><div class="heroMedia"></div></div></section></main><footer><p>Premium Demo Preview by Elitealvi Digital</p></footer></body></html>
