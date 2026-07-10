@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Website Demo | EliteAlvi Digital</title>
+  <meta name="description" content="Request a free website demo for your UK local business from EliteAlvi Digital.">
+  <link rel="stylesheet" href="request-demo.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="EliteAlvi Digital home">
+        <span class="brand-mark">E</span>
+        <span>EliteAlvi Digital</span>
+      </a>
+      <span class="header-note">UK business website demos</span>
+    </header>
+
+    <main class="hero-grid">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Made for local UK businesses</p>
+        <h1 id="page-title">See your business with a better website.</h1>
+        <p class="lede">Tell us what you do and we will prepare a personalised website preview. No commitment and no automatic subscription.</p>
+
+        <ul class="proof-grid">
+          <li><strong>Personalised</strong><span>Your business, services and location.</span></li>
+          <li><strong>Mobile ready</strong><span>Designed to look polished on every screen.</span></li>
+          <li><strong>Free preview</strong><span>Review the concept before discussing paid work.</span></li>
+        </ul>
+      </section>
+
+      <section class="form-card" aria-labelledby="form-title">
+        <div class="card-heading">
+          <span class="step">Free demo request</span>
+          <h2 id="form-title">Tell us about your business</h2>
+        </div>
+
+        <form id="demo-request-form" action="https://riverboat-skittle-cleaver.ngrok-free.dev/webhook/elitealvi-consent-intake" method="post" target="consent-response">
+          <label>
+            Business name
+            <input name="businessName" type="text" maxlength="160" autocomplete="organization" required>
+          </label>
+
+          <div class="two-column">
+            <label>
+              Main service
+              <input name="niche" type="text" maxlength="120" placeholder="e.g. Electrician" required>
+            </label>
+            <label>
+              Town or city
+              <input name="location" type="text" maxlength="120" autocomplete="address-level2" required>
+            </label>
+          </div>
+
+          <label>
+            UK WhatsApp mobile
+            <input name="phone" type="tel" maxlength="24" autocomplete="tel" inputmode="tel" placeholder="+44 7..." pattern="(?:\+44|0)7[0-9 ]{9,13}" required>
+            <span class="field-note">Use the number where you want to receive the requested demo.</span>
+          </label>
+
+          <label class="honeypot" aria-hidden="true">
+            Website
+            <input name="website" type="text" tabindex="-1" autocomplete="off">
+          </label>
+
+          <label class="consent-row">
+            <input name="whatsappConsent" type="checkbox" value="true" required>
+            <span>I agree that EliteAlvi Digital may contact me on WhatsApp about this requested website demo. I can reply STOP at any time.</span>
+          </label>
+
+          <input type="hidden" name="sourcePage" value="elitealvi_request_demo_v1">
+          <button type="submit">Request my free demo</button>
+          <p class="privacy">Your details are used only for this request. Read our <a href="https://elitealvidigital.com/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</p>
+        </form>
+
+        <div class="success-panel" id="success-panel" role="status" aria-live="polite" hidden>
+          <strong>Request received.</strong>
+          <span>We will review your details and contact you on WhatsApp about your website demo.</span>
+        </div>
+        <iframe class="response-frame" name="consent-response" title="Form submission response"></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <span>EliteAlvi Digital</span>
+      <span>Website previews for ambitious local businesses.</span>
+    </footer>
+  </div>
+  <script src="request-demo.js"></script>
+</body>
+</html>
